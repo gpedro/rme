@@ -1,0 +1,14 @@
+sudo: true
+
+language: cpp
+
+compiler:
+ - gcc
+ - clang
+
+before_script:
+ - sudo apt-get install git libboost-system-dev libboost-thread-dev libglu1-mesa-dev libwxgtk3.0-dev libarchive-dev
+ - mkdir build && cd build && cmake ..
+
+script:
+ - make -j `nproc`
