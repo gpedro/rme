@@ -9,7 +9,7 @@ compiler:
 before_script:
  - sudo add-apt-repository ppa:boost-latest/ppa -y
  - sudo apt-get update -qq
- - sudo apt-get install git libboost1.53-system-dev libboost1.53-thread-dev libglu1-mesa-dev libwxgtk3.0-dev libarchive-dev
+ - sudo apt-get install git libboost-system-dev libboost-thread-dev libglu1-mesa-dev libwxgtk3.0-dev libarchive-dev
  - mkdir build
  - cd build
  - cmake ..
